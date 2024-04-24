@@ -1,0 +1,73 @@
+#image-cont{
+    display:flex;
+    justify-content: center;
+   align-items:center;
+}
+.size{
+   
+    width:35px;
+    border-radius: 50%;
+    background-color: grey;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.sizes{
+    display: inline-block;
+}
+.price-text{
+    display: inline-block;
+}
+.offer{
+    padding: 3px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.521);
+}
+.mrp{
+    color: grey;
+}
+.mrp span{
+    font-weight: bolder;
+}
+#image-text{
+    display: flex;
+ 
+ text-align: center;
+ flex-direction: column;
+}
+#insta-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#vis-popup{
+    width:100%;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 99;
+    text-align: center;
+    padding-top:70px;
+    padding-bottom: 30px;
+}
+.lb-button{
+    background-color:white;
+}
+#vis-popup #left-arrow{
+    position: absolute;
+    top:50vh;
+    left:50px;
+    width:40px;
+    height:40px;
+    cursor:pointer;
+
+}
+
+
+
+

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--index css-->
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+     crossorigin="anonymous">
+       <!--bootstrap javascript-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+     crossorigin="anonymous"></script>
+     
+     <!--bootstrap icons-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    </head>
+<body>
+
+    <!--main container-->
+
+    <div id="container">
+
+        <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ShopOn</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+              <button class="btn ms-2 text-bg-primary btn-outline-light" type="submit">
+                <i class="bi bi-cart4"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!--banner-->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/4.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--items type container-->
+      <div class="row mt-4">
+        <div class="col-lg-4">
+<div id="image-cont"> <img src="images/tshirt1.jpg"  width="140" height="140" class="img-fluid center rounded-circle" alt=""></div>
+          <div id="image-text"><h2 class="fw-normal">T-Shirts</h2>
+          <p>30% off on our T-Shirts.</p>
+          <p><a class="btn btn-secondary" href="#">View details »</a></p></div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <div id="image-cont"> <img src="images/lower1.jpg"  width="140" height="140" class="img-fluid center rounded-circle" alt=""></div>
+            <div id="image-text">  <h2 class="fw-normal">Lowers</h2>
+          <p>40% off on our Lowers </p>
+          <p><a class="btn btn-secondary" href="#">View details »</a></p></div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <div id="image-cont"> <img src="images/shirt1.jpg"  width="140" height="140" class="img-fluid center rounded-circle" alt=""></div>
+            <div id="image-text"><h2 class="fw-normal">Shirts</h2>
+          <p>40% off on our Shirts</p>
+          <p><a class="btn btn-secondary" href="#">View details »</a></p></div>
+        </div><!-- /.col-lg-4 -->
+      </div>
+      <!--main-->
+      <div id="main">
+        <!--tshirts-->
+     
+        <div class="card-group mt-1 gap-2">
+             <!--tshirt 1-->
+          <div class="card  border border-dark  border-opacity-50 rounded-5">
+            <img src="images/tshirt1.jpg" class="card-img-top rounded-4" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gucci T Shirt </h5>
+              <p class="card-text">
+                <h6 class="sizes">Sizes :</h6>
+                 <div class="size">XL</div>
+                 <div class="size">L</div>
+                 <div class="size">M</div>
+                 <div class="size">S</div>
+              </p>
+              <p class="card-text">
+                <P class="offer price-text">40% 0ff </P>
+                <p class="mrp price-text">MRP:700</p> 
+                <p class="offprice ms-2 price-text">Offer Rs:<h5 class="ms-1 price-text"> 420</h5></p>
+              </p>
+              <button type="button" class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+          <!--tshirt 2-->
+          <div class="card  border border-dark  border-opacity-50 rounded-5">
+            <img src="images/tshirt2.jpg" class="card-img-top rounded-4" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Polo T Shirt </h5>
+              <p class="card-text">
+                <h6 class="sizes">Sizes :</h6>
+                 <div class="size">XL</div>
+                 <div class="size">L</div>
+                 <div class="size">M</div>
+                 <div class="size">S</div>
+              </p>
+              <p class="card-text">
+                <P class="offer price-text">50% 0ff </P>
+                <p class="mrp price-text">MRP:800</p> 
+                <p class="offprice ms-2 price-text">Offer Rs:<h5 class="ms-1 price-text"> 400</h5></p>
+              </p>
+              <button type="button" class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+          <!--tshirt3-->
+          <div class="card  border border-dark  border-opacity-50 rounded-5">
+            <img src="images/tshirt3.jpg" class="card-img-top rounded-4" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Funky T Shirt </h5>
+              <p class="card-text">
+                <h6 class="sizes">Sizes :</h6>
+                 <div class="size">XL</div>
+                 <div class="size">L</div>
+                 <div class="size">M</div>
+                 <div class="size">S</div>
+              </p>
+              <p class="card-text">
+                <P class="offer price-text">30% 0ff </P>
+                <p class="mrp price-text">MRP:600</p> 
+                <p class="offprice ms-2 price-text">Offer Rs:<h5 class="ms-1 price-text"> 420</h5></p>
+              </p>
+              <button type="button" class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+          <!--lowers-->
+          <div class="card-group mt-1 gap-2">
+            <!--lower 1-->
+         <div class="card  border border-dark  border-opacity-50 rounded-5">
+           <img src="images/lower1.jpg" class="card-img-top rounded-4" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">Nike Lower</h5>
+             <p class="card-text">
+               <h6 class="sizes">Sizes :</h6>
+                <div class="size">XL</div>
+                <div class="size">L</div>
+                <div class="size">M</div>
+              
+             </p>
+             <p class="card-text">
+               <P class="offer price-text">30% 0ff </P>
+               <p class="mrp price-text">MRP:700</p> 
+               <p class="offprice ms-2 price-text">Offer Rs:<h5 class="ms-1 price-text"> 490</h5></p>
+             </p>
+             <button type="button" class="btn btn-primary">Add to Cart</button>
+           </div>
+         </div>
+         <!--lower 2-->
+         <div class="card  border border-dark  border-opacity-50 rounded-5">
+           <img src="images/lower2.jpg" class="card-img-top rounded-4" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">Nike Grace Lower </h5>
+             <p class="card-text">
+               <h6 class="sizes">Sizes :</h6>
+               <div class="size">2XL</div>
+                <div class="size">XL</div>
+                <div class="size">L</div>
+                <div class="size">M</div>
+           
+             </p>
+             <p class="card-text">
+               <P class="offer price-text">50% 0ff </P>
+               <p class="mrp price-text">MRP:900</p> 
+               <p class="offprice ms-2 price-text">Offer Rs:<h5 class="ms-1 price-text"> 450</h5></p>
+             </p>
+             <button type="button" class="btn btn-primary">Add to Cart</button>
+           </div>
+         </div>
+         <!--lower3-->
+         <div class="card  border border-dark  border-opacity-50 rounded-5">
+           <img src="images/lower3.jpg" class="card-img-top rounded-4" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">Adidas Lower </h5>
+             <p class="card-text">
+               <h6 class="sizes">Sizes :</h6>
+                <div class="size">XL</div>
+                <div class="size">L</div>
+                <div class="size">M</div>
+                <div class="size">S</div>
+             </p>
+             <p class="card-text">
+               <P class="offer price-text">20% 0ff </P>
+               <p class="mrp price-text">MRP:1500</p> 
+               <p class="offprice ms-2 price-text">Offer Rs:<h5 class="ms-1 price-text"> 1200</h5></p>
+             </p>
+             <button type="button" class="btn btn-primary">Add to Cart</button>
+           </div>
+         </div>
+        </div>
+        <!--track suit-->
+        <div class="card-group mt-1 gap-2">
+          <!--track suit 1-->
+       <div class="card  border border-dark  border-opacity-50 rounded-5">
+         <img src="images/set1.jpg" class="card-img-top rounded-4" alt="...">
+         <div class="card-body">
+           <h5 class="card-title">Tshirt and Short</h5>
+           <p class="card-text">
+             <h6 class="sizes">Sizes :</h6>
+              <div class="size">XL</div>
+              <div class="size">L</div>
+              <div class="size">M</div>
+              <div class="size">S</div>
+            
+           </p>
+           <p class="card-text">
+             <P class="offer price-text">40% 0ff </P>
+             <p class="mrp price-text">MRP:600</p> 
+             <p class="offprice ms-2 price-text">Offer Rs:<h5 class="ms-1 price-text"> 360</h5></p>
+           </p>
+           <button type="button" class="btn btn-primary">Add to Cart</button>
+         </div>
+       </div>
+       <!--track suit2-->
+       <div class="card  border border-dark  border-opacity-50 rounded-5">
+         <img src="images/set2.jpg" class="card-img-top rounded-4" alt="...">
+         <div class="card-body">
+           <h5 class="card-title">Tshirt and Short  </h5>
+           <p class="card-text">
+             <h6 class="sizes">Sizes :</h6>
+             
+              <div class="size">XL</div>
+              <div class="size">L</div>
+              <div class="size">M</div>
+              <div class="size">S</div>
+         
+           </p>
+           <p class="card-text">
+             <P class="offer price-text">50% 0ff </P>
+             <p class="mrp price-text">MRP:900</p> 
+             <p class="offprice ms-2 price-text">Offer Rs:<h5 class="ms-1 price-text"> 450</h5></p>
+           </p>
+           <button type="button" class="btn btn-primary">Add to Cart</button>
+         </div>
+       </div>
+       <!--track suit3-->
+       <div class="card  border border-dark  border-opacity-50 rounded-5">
+         <img src="images/set3.jpg" class="card-img-top rounded-4" alt="...">
+         <div class="card-body">
+           <h5 class="card-title">TShirt and Short</h5>
+           <p class="card-text">
+             <h6 class="sizes">Sizes :</h6>
+             <div class="size">2XL</div>
+              <div class="size">XL</div>
+              <div class="size">L</div>
+              <div class="size">M</div>
+              <div class="size">S</div>
+           </p>
+           <p class="card-text">
+             <P class="offer price-text">40% 0ff </P>
+             <p class="mrp price-text">MRP:1000</p> 
+             <p class="offprice ms-2 price-text">Offer Rs:<h5 class="ms-1 price-text"> 600</h5></p>
+           </p>
+           <button type="button" class="btn btn-primary">Add to Cart</button>
+         </div>
+       </div>
+      </div>
+      <!--Shirts-->
+      <div class="card-group mt-1 g-4 gap-2">
+        <!--shirt 1-->
+     <div class="card  border border-dark  border-opacity-50 rounded-5 ">
+       <img src="images/shirt1.jpg" class="card-img-top rounded-4" alt="...">
+       <div class="card-body">
+         <h5 class="card-title">Shirt Check  </h5>
+         <p class="card-text">
+           <h6 class="sizes">Sizes :</h6>
+            <div class="size">XL</div>
+            <div class="size">L</div>
+            <div class="size">M</div>
+            <div class="size">S</div>
+          
+         </p>
+         <p class="card-text">
+           <P class="offer price-text">30% 0ff </P>
+           <p class="mrp price-text">MRP:900</p> 
+           <p class="offprice ms-2 price-text">Offer Rs:<h5 class="ms-1 price-text"> 620</h5></p>
+         </p>
+         <button type="button" class="btn btn-primary">Add to Cart</button>
+       </div>
+     </div>
+     <!--shirt2-->
+     <div class="card  border border-dark  border-opacity-50 rounded-5">
+       <img src="images/shirt2.jpg" class="card-img-top rounded-4" alt="...">
+       <div class="card-body">
+         <h5 class="card-title">Shirt Check black </h5>
+         <p class="card-text">
+           <h6 class="sizes">Sizes :</h6>
+           
+            <div class="size">XL</div>
+            <div class="size">L</div>
+            <div class="size">M</div>
+            <div class="size">S</div>
+       
+         </p>
+         <p class="card-text">
+           <P class="offer price-text">40% 0ff </P>
+           <p class="mrp price-text">MRP:1000</p> 
+           <p class="offprice ms-2 price-text">Offer Rs:<h5 class="ms-1 price-text"> 600</h5></p>
+         </p>
+         <button type="button" class="btn btn-primary">Add to Cart</button>
+       </div>
+     </div>
+     <!--shirt3-->
+     <div class="card  border border-dark  border-opacity-50 rounded-5">
+       <img src="images/shirt3.jpg" class="card-img-top rounded-4" alt="...">
+       <div class="card-body">
+         <h5 class="card-title">Shirt Funky</h5>
+         <p class="card-text">
+           <h6 class="sizes">Sizes :</h6>
+          
+            <div class="size">XL</div>
+            <div class="size">L</div>
+            <div class="size">M</div>
+            <div class="size">S</div>
+         </p>
+         <p class="card-text">
+           <P class="offer price-text">50% 0ff </P>
+           <p class="mrp price-text">MRP:1000</p> 
+           <p class="offprice ms-2 price-text">Offer Rs:<h5 class="ms-1 price-text"> 500</h5></p>
+         </p>
+         <button type="button" class="btn btn-primary">Add to Cart</button>
+       </div>
+     </div>
+    </div>
+      
+
+      </div>
+    </div>
+    <!--instagram-->
+    <div class="row align-items-md-stretch mt-2">
+      <div class="col-md-6">
+        <div class="h-100  text-bg-dark rounded-3 " id="insta-cont">
+          <img src="images/instadesk.png" height="300px" width="300px" class="mt-0 img-fluid  alt="">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+          <h1><i class="bi bi-instagram"></i></h1>
+          <h2>Get us on Instagram</h2>
+          <p>
+          Follow us on Instagram To get update about our products.
+         we posts the images of men's wears Every single Day.
+          </p>
+          <button type="button" class="btn btn-lg btn-outline-dark" data-bs-toggle="popover" 
+          data-bs-title="Our Instagram" 
+          data-bs-content="@hiteshkaushal8">
+            Get Instagram</button>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Shop us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Social Acounts</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-instagram"></i></a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-whatsapp"></i></a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-snapchat"></i></a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-telegram"></i></a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-facebook"></i></a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Contact</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">0124443454</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">0545441144</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">4414110145</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Shopus123@gmail.com</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">123shopUs@gmail.com</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our Shopus</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2024 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  
+    </div>
+
+    
+
+
+
+
+
+
+     
+
+</body>
+</html>
